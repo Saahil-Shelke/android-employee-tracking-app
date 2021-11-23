@@ -15,4 +15,10 @@
         app:cardCornerRadius="20dp"
         app:cardUseCompatPadding="true"/>
 
+    <Button
+        android:id="@+id/Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="202dp"
+        android:text="Maps" />
+
 </LinearLayout>
