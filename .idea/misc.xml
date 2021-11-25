@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android-employee-tracking-app/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/manish android mini project/android-employee-tracking-app/app/src/main/res/drawable/ic_email.xml" value="0.25052083333333336" />
+        <entry key="..\:/manish android mini project/android-employee-tracking-app/app/src/main/res/drawable/ic_person.xml" value="0.25052083333333336" />
+        <entry key="..\:/manish android mini project/android-employee-tracking-app/app/src/main/res/layout/activity_login.xml" value="0.20652173913043478" />
         <entry key="..\:/manish android mini project/android-employee-tracking-app/app/src/main/res/layout/activity_main.xml" value="0.234375" />
+        <entry key="..\:/manish android mini project/android-employee-tracking-app/app/src/main/res/layout/activity_registration.xml" value="0.20652173913043478" />
       </map>
     </option>
   </component>
