@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PROJECTS/SE MINI PROJECT/Code file/android-employee-tracking-app/app/src/main/res/drawable/ic_person.xml" value="0.20052083333333334" />
+        <entry key="..\:/PROJECTS/SE MINI PROJECT/Code file/android-employee-tracking-app/app/src/main/res/drawable/ic_secutity.xml" value="0.14814814814814814" />
+        <entry key="..\:/PROJECTS/SE MINI PROJECT/Code file/android-employee-tracking-app/app/src/main/res/layout/activity_add_employee.xml" value="0.15942028985507245" />
+        <entry key="..\:/PROJECTS/SE MINI PROJECT/Code file/android-employee-tracking-app/app/src/main/res/layout/activity_emp_main_page.xml" value="0.12771739130434784" />
+        <entry key="..\:/PROJECTS/SE MINI PROJECT/Code file/android-employee-tracking-app/app/src/main/res/layout/activity_first_page.xml" value="0.14719202898550723" />
+        <entry key="..\:/PROJECTS/SE MINI PROJECT/Code file/android-employee-tracking-app/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/PROJECTS/SE MINI PROJECT/Code file/android-employee-tracking-app/app/src/main/res/layout/activity_login2.xml" value="0.13269927536231885" />
+        <entry key="..\:/PROJECTS/SE MINI PROJECT/Code file/android-employee-tracking-app/app/src/main/res/layout/activity_main.xml" value="0.12952898550724637" />
+        <entry key="..\:/PROJECTS/SE MINI PROJECT/Code file/android-employee-tracking-app/app/src/main/res/layout/activity_registration.xml" value="0.16666666666666666" />
         <entry key="..\:/android-employee-tracking-app/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/manish android mini project/android-employee-tracking-app/app/src/main/res/drawable/ic_email.xml" value="0.25052083333333336" />
         <entry key="..\:/manish android mini project/android-employee-tracking-app/app/src/main/res/drawable/ic_person.xml" value="0.25052083333333336" />

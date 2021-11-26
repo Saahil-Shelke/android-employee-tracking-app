@@ -5,19 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card1"
-        android:layout_width="340dp"
-        android:layout_height="150dp"
-        app:cardElevation="3dp"
-        app:cardCornerRadius="20dp"
-        app:cardUseCompatPadding="true"/>
+    <Button
+        android:id="@+id/Btn1"
+        android:layout_width="162dp"
+        android:layout_height="202dp"
+        android:text="Add employee" />
 
     <Button
         android:id="@+id/Btn"
-        android:layout_width="wrap_content"
+        android:layout_width="151dp"
         android:layout_height="202dp"
         android:text="Maps" />
 
