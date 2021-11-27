@@ -27,7 +27,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private LocationListener locationListener;
     private LocationManager locationManager;
 
-    private final long MIN_TIME = 1000; // 1 second
+    private final long MIN_TIME = 999; // 1 second
     private final long MIN_DIST = 1; // 5 Meters
 
     private LatLng latLng;
