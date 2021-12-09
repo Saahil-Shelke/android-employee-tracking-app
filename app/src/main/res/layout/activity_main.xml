@@ -62,6 +62,17 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Btn2"
+            android:layout_width="68dp"
+            android:layout_height="104dp"
+            android:text="Add task"
+            app:layout_constraintBottom_toTopOf="@+id/Btn1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
 <!--        </LinearLayout>-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
