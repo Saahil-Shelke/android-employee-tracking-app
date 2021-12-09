@@ -25,7 +25,4 @@ public class taskDetails {
         return task;
     }
 
-    public String getLocation() {
-        return location;
-    }
 }
