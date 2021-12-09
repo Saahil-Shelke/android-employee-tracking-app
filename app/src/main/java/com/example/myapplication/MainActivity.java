@@ -19,9 +19,9 @@ import android.view.View;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
-    public Button button;
-    public Button button1;
-    public Button button2;
+//    public Button button;
+//    public Button button1;
+//    public Button button2;
 
     public DrawerLayout drawerLayout;
     public NavigationView navigationView;
@@ -73,33 +73,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button = (Button) findViewById(R.id.Btn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-        button1 = (Button) findViewById(R.id.Btn1);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1 = new Intent(MainActivity.this, addEmployee.class);
-                startActivity(intent1);
-            }
-        });
-
-        button2 = (Button) findViewById(R.id.Btn2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1 = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(intent1);
-            }
-        });
+//        button = (Button) findViewById(R.id.Btn);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+//                startActivity(intent);
+//
+//            }
+//        });
+//
+//        button1 = (Button) findViewById(R.id.Btn1);
+//        button1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent1 = new Intent(MainActivity.this, addEmployee.class);
+//                startActivity(intent1);
+//            }
+//        });
+//
+//        button2 = (Button) findViewById(R.id.Btn2);
+//        button2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent1 = new Intent(MainActivity.this, MainActivity.class);
+//                startActivity(intent1);
+//            }
+//        });
     }
 
     @Override
