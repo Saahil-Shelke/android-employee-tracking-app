@@ -58,8 +58,11 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case R.id.addtask:
+                        Intent intent1 = new Intent(MainActivity.this,addTask.class);
+                        startActivity(intent1);
                         break;
                     case R.id.nav_log:
+
                         break;
 
                 }
