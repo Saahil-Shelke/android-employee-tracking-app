@@ -47,13 +47,34 @@ public class MainActivity extends AppCompatActivity {
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()) {
+
+                    case R.id.addemp:
+                        Intent intent = new Intent(MainActivity.this, addEmployee.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.addtask:
+                        break;
+                    case R.id.nav_log:
+                        break;
+
+                }
+
+                drawerLayout.closeDrawer(GravityCompat.START);
+
+                return true;
+            }
+        });
 
         button = (Button) findViewById(R.id.Btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MapsActivity.class);
+                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
                 startActivity(intent);
 
             }
@@ -63,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(MainActivity.this,addEmployee.class);
+                Intent intent1 = new Intent(MainActivity.this, addEmployee.class);
                 startActivity(intent1);
             }
         });
@@ -72,41 +93,19 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(MainActivity.this,MainActivity.class);
+                Intent intent1 = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent1);
             }
         });
     }
 
     @Override
-    public void onBackPressed(){
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)) {
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
-        }
-
-        else {
+        } else {
             super.onBackPressed();
 
         }
-    }
-
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item){
-        switch(item.getItemId()){
-
-            case R.id.addemp:
-                Intent intent = new Intent(MainActivity.this,addEmployee.class);
-                startActivity(intent);
-                break;
-            case R.id.addtask:
-                break;
-            case R.id.nav_log:
-                break;
-
-
-        }
-
-        drawerLayout.closeDrawer(GravityCompat.START);
-        return true;
     }
 }
