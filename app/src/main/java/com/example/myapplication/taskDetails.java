@@ -16,6 +16,10 @@ public class taskDetails {
         return name;
     }
 
+    public String getLocation() {
+        return location;
+    }
+
     public String getTask() {
 
         return task;
