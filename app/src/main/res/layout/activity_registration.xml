@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@color/black"
     tools:context=".Registration">
 
     <TextView
@@ -83,7 +83,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="15dp"
         android:paddingEnd="10dp"
@@ -107,7 +107,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Confirm Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="15dp"
         android:paddingEnd="10dp"
@@ -133,8 +133,10 @@
 
     <Button
         android:id="@+id/btnreg"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:text="REGISTER"
         app:layout_constraintBottom_toTopOf="@+id/Login"
         app:layout_constraintEnd_toEndOf="parent"

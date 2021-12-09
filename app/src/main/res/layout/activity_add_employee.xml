@@ -5,23 +5,24 @@
     android:id="@+id/addEmpreg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@color/black"
     tools:context=".addEmployee">
 
     <TextView
         android:id="@+id/emptextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Add Employee"
         android:textColor="#EAE4E4"
         android:textSize="34sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.125" />
 
     <EditText
         android:id="@+id/empUsernamel"
@@ -85,7 +86,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="15dp"
         android:paddingEnd="10dp"
@@ -109,7 +110,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Confirm Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="15dp"
         android:paddingEnd="10dp"
@@ -123,9 +124,11 @@
 
     <Button
         android:id="@+id/empbtnreg"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
         android:text="REGISTER"
         app:layout_constraintBottom_toTopOf="@+id/Login"
         app:layout_constraintEnd_toEndOf="parent"
