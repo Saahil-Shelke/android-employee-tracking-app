@@ -1,12 +1,17 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
@@ -20,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
     public DrawerLayout drawerLayout;
     public NavigationView navigationView;
     public Toolbar toolbar;
+    public ConstraintLayout addemployee;
+
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//
+//
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +44,43 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.navigationviews);
         toolbar = findViewById(R.id.toolbar);
+        addemployee = findViewById(R.id.addEmpreg);
 
-        //setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        getSupportActionBar().setIcon(R.drawable.ic_hamburger);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout,toolbar,R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+//        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//
+//                switch (item.getItemId()) {
+//
+//                    case R.id.addemp:
+//                        Log.i("MENU_DRAWER_TAG", "Add Employee Selected");
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//
+//                    case R.id.addtask:
+//                        Log.i("MENU_DRAWER_TAG", "Add Task Selected");
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//
+//                    case R.id.nav_log:
+//                        Log.i("MENU_DRAWER_TAG", "Logout Selected");
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//
+//
+//                }
+//
+//                return true;
+//            }
+//        });
+
 
 
         button = (Button) findViewById(R.id.Btn);

@@ -31,7 +31,6 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:logo="@drawable/ic_hamburger"
             app:title="Toolbars"
             app:titleTextColor="@color/black"
             android:layout_marginBottom="5dp"
