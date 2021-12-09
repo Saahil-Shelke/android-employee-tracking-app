@@ -21,19 +21,12 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity {
     public Button button;
     public Button button1;
+    public Button button2;
 
     public DrawerLayout drawerLayout;
     public NavigationView navigationView;
     public Toolbar toolbar;
     public ConstraintLayout addemployee;
-
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//
-//
-//
-//        return super.onOptionsItemSelected(item);
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,38 +43,11 @@ public class MainActivity extends AppCompatActivity {
 //        getSupportActionBar().setDisplayShowHomeEnabled(true);
 //        getSupportActionBar().setIcon(R.drawable.ic_hamburger);
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout,toolbar,R.string.open, R.string.close);
+        navigationView.bringToFront();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-//        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//
-//                switch (item.getItemId()) {
-//
-//                    case R.id.addemp:
-//                        Log.i("MENU_DRAWER_TAG", "Add Employee Selected");
-//                        drawerLayout.closeDrawer(GravityCompat.START);
-//                        break;
-//
-//                    case R.id.addtask:
-//                        Log.i("MENU_DRAWER_TAG", "Add Task Selected");
-//                        drawerLayout.closeDrawer(GravityCompat.START);
-//                        break;
-//
-//                    case R.id.nav_log:
-//                        Log.i("MENU_DRAWER_TAG", "Logout Selected");
-//                        drawerLayout.closeDrawer(GravityCompat.START);
-//                        break;
-//
-//
-//                }
-//
-//                return true;
-//            }
-//        });
-
-
+        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
 
         button = (Button) findViewById(R.id.Btn);
         button.setOnClickListener(new View.OnClickListener() {
@@ -102,5 +68,45 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        button2 = (Button) findViewById(R.id.Btn2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(MainActivity.this,MainActivity.class);
+                startActivity(intent1);
+            }
+        });
+    }
+
+    @Override
+    public void onBackPressed(){
+        if(drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+
+        else {
+            super.onBackPressed();
+
+        }
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item){
+        switch(item.getItemId()){
+
+            case R.id.addemp:
+                Intent intent = new Intent(MainActivity.this,addEmployee.class);
+                startActivity(intent);
+                break;
+            case R.id.addtask:
+                break;
+            case R.id.nav_log:
+                break;
+
+
+        }
+
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
     }
 }
