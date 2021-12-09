@@ -19,7 +19,7 @@ import android.view.View;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
-//    public Button button;
+   public Button button;
 //    public Button button1;
 //    public Button button2;
 
@@ -73,15 +73,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        button = (Button) findViewById(R.id.Btn);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
+        button = (Button) findViewById(R.id.Btn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(intent);
+
+            }
+        });
 //
 //        button1 = (Button) findViewById(R.id.Btn1);
 //        button1.setOnClickListener(new View.OnClickListener() {
